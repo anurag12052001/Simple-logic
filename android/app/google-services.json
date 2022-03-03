@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "851305503170",
+    "project_id": "chatapp-d164f",
+    "storage_bucket": "chatapp-d164f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:851305503170:android:977fddd1280653f33c9e5b",
+        "android_client_info": {
+          "package_name": "com.example.simplelogic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "851305503170-sj7h489fhsfu0scgj0tifk96drvfdr2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2lp_3Ap1avHw2gt1sTNUd36-KjvjMpsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "851305503170-sj7h489fhsfu0scgj0tifk96drvfdr2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
