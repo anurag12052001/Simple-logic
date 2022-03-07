@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_print
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -102,24 +100,15 @@ class _SignUpState extends State<SignUp> {
                     Padding(
                       padding:
                           const EdgeInsets.only(left: 25, right: 25, top: 30),
-                      child: textfield(
-                        "Enter Email", email_controller, false,
-                        keyboardType: TextInputType.emailAddress,
-                        AutofillHints: [AutofillHints.email],
-                        //     ErrorText: error
-                        //         ? "please enter a valid email"
-                        //         : null, Validator: (val) {
-                        //   // return val.isBlank || val.length < 6
-                        //   //     ? "please enter email"
-                        //   //     : null;
-                        //   return RegExp(
-                        //               r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
-                        //           .hasMatch(val)
-                        //       ? null
-                        //       : "Enter correct email";
-                        // }),
-                        GetUtils: GetUtils.isEmail(email_controller.text),
-                      ),
+                      // child: textfield(
+                      //   "Enter Email", email_controller, false,
+                      //   keyboardType: TextInputType.emailAddress,
+                      //   AutofillHints: [AutofillHints.email],
+                      //   // GetUtils: GetUtils.isEmail(email_controller.text),
+                      // ),
+                      child: textfield("Enter Email", email_controller, false,
+                          keyboardType: TextInputType.emailAddress,
+                          AutofillHints: [AutofillHints.email]),
                     ),
                     Padding(
                       padding:

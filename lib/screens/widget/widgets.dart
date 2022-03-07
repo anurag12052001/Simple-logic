@@ -36,7 +36,8 @@ Widget textfield(
   Validator,
   formKey,
   ErrorText,
-  GetUtils,
+  textfieldcolor,
+  // var GetUtils,
   print,
 }) {
   return TextFormField(
@@ -49,7 +50,9 @@ Widget textfield(
       hintText: hint,
       errorText: ErrorText,
     ),
-    style: TextStyle(fontSize: 18),
+    style: TextStyle(
+      fontSize: 18,
+    ),
   );
 }
 
@@ -70,4 +73,37 @@ Widget textbutton(
           fontSize: 18,
         ),
       ));
+}
+
+Widget message_container(String msg) {
+  return Container(
+    decoration: BoxDecoration(
+      color: Colors.white30,
+
+      borderRadius: BorderRadius.circular(40),
+      // border: Border.all(
+      //   color: Colors.red.shade500,
+      // ),
+    ),
+    child: Text(
+      msg,
+      style: TextStyle(color: Colors.white, fontSize: 20),
+    ),
+  );
+}
+
+Widget imgContainer() {
+  return Container(
+    height: 60,
+    width: 80,
+    decoration: BoxDecoration(
+      border: Border.all(
+        color: Colors.lightBlue.shade300,
+      ),
+      shape: BoxShape.circle,
+      image: const DecorationImage(
+        image: const AssetImage("assets/modi.jpg"),
+      ),
+    ),
+  );
 }

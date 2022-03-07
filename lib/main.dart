@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Chat App',
       debugShowCheckedModeBanner: false,
-      home: SignUp(),
+      home: ChatScreen(),
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
